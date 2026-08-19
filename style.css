@@ -1,0 +1,327 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.school-header {
+    width: 100%;
+    min-height: 120px;
+
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Logos */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-logo {
+    justify-content: flex-start;
+}
+
+.right-logo {
+    justify-content: flex-end;
+}
+
+.logo-container img {
+    width: 85px;
+    height: 85px;
+
+    object-fit: contain;
+}
+
+
+/* School Name */
+
+.school-name {
+    text-align: center;
+}
+
+.school-name h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.school-name p {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+.intro-section {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 45px;
+}
+
+.intro-section h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: #17365d;
+}
+
+.intro-section p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+.tab-button {
+    border: none;
+    background: #e9edf2;
+
+    padding: 18px 15px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    transition: all 0.3s ease;
+
+    color: #333;
+}
+
+.tab-button span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tab-button small {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* Hover */
+
+.tab-button:hover {
+    background-color: #dce3eb;
+}
+
+
+/* Active Tab */
+
+.tab-button.active {
+    background-color: #17365d;
+    color: white;
+}
+
+.tab-button.active small {
+    color: #dce5ef;
+}
+
+
+/* =========================
+   TAB CONTENT
+========================= */
+
+.tab-content {
+    display: none;
+
+    background: white;
+
+    padding: 40px;
+
+    border: 1px solid #ddd;
+    border-top: none;
+
+    animation: fadeEffect 0.4s ease;
+}
+
+.tab-content h3 {
+    font-size: 28px;
+    color: #17365d;
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* Active Content */
+
+.active-content {
+    display: block;
+}
+
+
+/* =========================
+   CONTENT CARD
+========================= */
+
+.content-card {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background-color: #f5f7fa;
+
+    border-left: 4px solid #17365d;
+}
+
+.content-card h4 {
+    margin-bottom: 8px;
+    font-size: 19px;
+    color: #17365d;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeEffect {
+
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .school-header {
+        grid-template-columns: 70px 1fr 70px;
+        padding: 15px;
+    }
+
+    .logo-container img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name h1 {
+        font-size: 20px;
+    }
+
+    .school-name p {
+        font-size: 11px;
+    }
+
+
+    .main-container {
+        padding: 40px 15px;
+    }
+
+    .intro-section h2 {
+        font-size: 30px;
+    }
+
+
+    .tabs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tab-button {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tab-content {
+        padding: 25px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .school-header {
+        grid-template-columns: 50px 1fr 50px;
+    }
+
+    .logo-container img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .school-name h1 {
+        font-size: 15px;
+    }
+
+    .school-name p {
+        display: none;
+    }
+
+
+    .tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-button {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+}

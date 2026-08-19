@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MYP Learning Engagement</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="school-header">
+
+        <!-- Left Logo -->
+        <div class="logo-container left-logo">
+            <img src="images/school_logo.jpg" alt="School Logo">
+        </div>
+
+        <!-- School Name -->
+        <div class="school-name">
+            <h1>BLISS International School, Pune</h1>
+            <p>International Baccalaureate Programme</p>
+        </div>
+
+        <!-- Right Logo -->
+        <div class="logo-container right-logo">
+            <img src="images/myp_logo.png" alt="School Logo">
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-container">
+
+        <!-- Page Heading -->
+        <section class="intro-section">
+
+            <h2>MYP Learning Engagement</h2>
+
+            <p>
+                MYP learning engagement encourages students to connect classroom
+                learning with real-world experiences. Through community
+                involvement, projects, personal inquiry and academic achievements,
+                students develop knowledge, skills and a deeper understanding of
+                their role in the wider community.
+            </p>
+
+        </section>
+
+
+        <!-- ================= TABS ================= -->
+        <section class="tabs-section">
+
+            <div class="tabs">
+
+                <button class="tab-button active"
+                        onclick="openTab(event, 'community-engagement')">
+                    <span>Community Engagement</span>
+                    <small>For All</small>
+                </button>
+
+                <button class="tab-button"
+                        onclick="openTab(event, 'community-project')">
+                    <span>Community Project</span>
+                    <small>MYP 3</small>
+                </button>
+
+                <button class="tab-button"
+                        onclick="openTab(event, 'personal-project')">
+                    <span>Personal Project</span>
+                    <small>MYP 5</small>
+                </button>
+
+                <button class="tab-button"
+                        onclick="openTab(event, 'academic-highlights')">
+                    <span>Academic Highlights</span>
+                    <small>For All</small>
+                </button>
+
+            </div>
+
+
+            <!-- ================= TAB CONTENT ================= -->
+
+            <div id="community-engagement" class="tab-content active-content">
+
+                <h3>Community Engagement</h3>
+
+                <p>
+                    Community engagement provides students with opportunities
+                    to participate in meaningful activities that create a
+                    positive impact on their school and wider community.
+                </p>
+
+                <div class="content-card">
+                    <h4>Student Participation</h4>
+                    <p>
+                        Students take part in initiatives, awareness campaigns,
+                        service activities and collaborative experiences that
+                        connect learning with real-world needs.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="community-project" class="tab-content">
+
+                <h3>Community Project — MYP 3</h3>
+
+                <p>
+                    The Community Project gives MYP 3 students an opportunity
+                    to explore a community need and develop a meaningful
+                    response through research, planning and action.
+                </p>
+
+                <div class="content-card">
+                    <h4>Project Focus</h4>
+                    <p>
+                        Students identify a community issue, investigate its
+                        causes and develop a project that demonstrates
+                        collaboration, communication and responsible action.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="personal-project" class="tab-content">
+
+                <h3>Personal Project — MYP 5</h3>
+
+                <p>
+                    The Personal Project is an opportunity for MYP 5 students
+                    to explore an area of personal interest and demonstrate
+                    the knowledge and skills they have developed throughout
+                    the MYP.
+                </p>
+
+                <div class="content-card">
+                    <h4>Student Inquiry</h4>
+                    <p>
+                        Students independently investigate a topic, establish
+                        a goal, develop a product or outcome and reflect on
+                        their learning journey.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="academic-highlights" class="tab-content">
+
+                <h3>Academic Highlights</h3>
+
+                <p>
+                    Academic highlights celebrate student achievements,
+                    accomplishments and learning experiences across different
+                    subject areas and grade levels.
+                </p>
+
+                <div class="content-card">
+                    <h4>Celebrating Achievement</h4>
+                    <p>
+                        This section can showcase competitions, exhibitions,
+                        awards, subject achievements, student presentations
+                        and other academic accomplishments.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
